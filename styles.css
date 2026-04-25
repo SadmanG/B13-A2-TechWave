@@ -230,6 +230,30 @@ nav {
 
 .episode-content { padding: 25px; }
 
+.episode-link {
+    text-decoration: none; /* Removes the default underline */
+    color: inherit;        /* Keeps your white text color */
+    display: block;        /* Makes the whole card clickable */
+    transition: transform 0.3s ease;
+}
+
+/* 2. Hover effect for the whole card */
+.episode-link:hover {
+    transform: translateY(-8px); /* Card lifts up on hover */
+}
+
+/* 3. Image zoom effect on hover */
+.episode-link:hover .episode-img {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+/* 4. Optional: Darken the image slightly on hover */
+.episode-link:hover .episode-card {
+    border-color: #FF00CC; /* Border turns green on hover */
+    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1);
+}
+
 /* Host Section */
 .host-flex {
     display: flex;
